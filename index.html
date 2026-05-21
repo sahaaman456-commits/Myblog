@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f1f5f9;
+        }
+        .container {
+            display: grid;
+            grid-template-areas: 
+              "header header header"
+              "nav    nav    nav"
+              "aside  main   main"
+              "footer footer footer"
+            ;
+            grid-template-columns: 1fr 2fr 2fr;
+            gap: 20px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            grid-area: header;
+            background-color:#38bdf8;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 12px;
+        }
+        nav {
+            grid-area: nav;
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 12px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #3069a1;
+            font-weight: bold;
+            margin: 0 30px;
+        }
+        aside{
+            grid-area: aside; 
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .categories {
+            background-color: #e0f2fe;
+            padding: 8px;
+            margin: 6px 0;
+            border-radius: 8px;
+        }
+        main{
+            grid-area: main; 
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .post {
+            /* border: 1px solid red; */
+            border-bottom: 1px solid red;
+        }
+        .post img {
+            width: 100%;
+            border-radius: 12px;
+            margin: 10px 0;
+        }
+        footer{grid-area: footer; 
+               background-color: blueviolet;
+               text-align: center;
+               font-weight: bold;
+               border-radius: 12px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aman Travel Blog</h1>
+            <p>Stories, photos, and tips from my trips</p>
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Travel</a>
+            <a href="#">Food</a>
+            <a href="#">Contact</a>
+        </nav>
+        <aside>
+            <h2>About Me</h2>
+            <img src="pic11.png" alt="Travel img">
+            <p>Hello! I am Aman. I love travellings, taking photos, and trying local food</p>
+            <h3>Categories</h3>
+            <div class="category">Travel Tips</div>
+            <div class="category">Food</div>
+            <div class="category">Nature</div>
+            <div class="category">city Life</div>
+        </aside>
+        <main>
+            <article class="post">
+            <h2>A beautiful Morning in Nepal</h2>
+            <p><Strong>Date:</Strong> May 14, 2026</p>
+             <img src="pic22.png" alt="">
+             <p>Nepal is one of the most good place to travel and I have visited a lot of times as I'm living in Nepal. </p>
+             <p>Many of the places of Nepal is listed in Cultural Heritage of UNICESO and I think people should must travel at once in their life.
+             </p>
+             </article>
+
+              <article class="post">
+            <h2>Essential Travel Logistics</h2>
+            <p><Strong>Date:</Strong> May 14, 2026</p>
+             <img src="pic33.png" alt="">
+             <p>For travelers organizing an adventure through the Nepal Tourism Board, the country offers distinct ecosystems ranging from subalpine peaks to sub-tropical plains: </p>
+             <p>Readily available via standard visa-on-arrival systems at Tribhuvan International Airport and land border entry points.</p>
+             <p>The clear, peak trekking seasons run from autumn (October to November) and spring (March to May).</p>
+             <p>If you are planning a trip, let me know if you would like assistance with a trekking itinerary, checking visa requirements, or finding the best local flight and bus routes.
+             <p>General crime is low, though standard travel precautions apply in crowded markets. Travelers are encouraged to verify current safety conditions via official portals like the U.S. Travel Advisory for Nepal.</p>
+             </p>
+             </article>
+        </main>
+        <footer>
+            Copy Right @2026
+        </footer>
+    </div>
+    
+
+</body>
+</html>
